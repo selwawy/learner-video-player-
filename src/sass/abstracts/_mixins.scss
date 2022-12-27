@@ -1,0 +1,21 @@
+@mixin easeOut {
+   transition: all 0.2s ease-out;
+}
+
+@mixin background {
+   @if $show-home-image {
+      &#bg-img {
+         background: $home-image center / cover no-repeat fixed $color-secondary;
+         &::after {
+            content: '';
+            background: rgba($color-primary, $background-opacity);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+         }
+      }
+   }
+}

@@ -1,0 +1,48 @@
+.site-nav {
+   &__ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+   }
+
+   &__li {
+   }
+
+   &__a {
+      color: var(--clr-grey);
+      text-decoration: none;
+      // font-size: var(--step-0);
+      text-transform: uppercase;
+
+      // &--hire-me {
+      //   display: inline-grid;
+      //   place-items: center;
+      //   position: relative;
+      //   aspect-ratio: 1;
+      //   background: rgb(191, 0, 0);
+      //   padding: 0 1rem;
+      //   border-radius: 50%;
+      //   z-index: 2;
+
+      //   &::after {
+      //     content: "";
+      //     position: absolute;
+      //     z-index: -1;
+      //     width: 100%;
+      //     height: 100%;
+      //     background: hsla(0, 0%, 55%, 0.568);
+      //     border-radius: 50%;
+      //     opacity: 0;
+      //     transition: opacity 500ms linear, transform 750ms ease-in-out;
+      //   }
+      //   &:hover::after,
+      //   &:focus::after {
+      //     opacity: 0.5;
+      //     z-index: -1;
+      //     transform: scale(1.5);
+      //   }
+      // }
+   }
+}

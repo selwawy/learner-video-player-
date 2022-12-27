@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+.home-hero {
+   &__container {
+      @include breapoint(up, lg) {
+         display: grid;
+         grid-template-columns: repeat(8, 1fr);
+         gap: 1rem;
+      }
+   }
+
+   &__my-photo {
+      grid-column: 5/9;
+      grid-row: 1/4;
+      justify-self: flex-end;
+
+      @include breapoint(down, lg) {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   &__job-title {
+      // line-height: 0.9;
+      margin-block: 1em 0.5em;
+      grid-column: 1/6;
+      grid-row: 1;
+
+      // @include breapoint(down, md) {
+      //    margin-block-start: 1em;
+      // }
+   }
+
+   &__job-description {
+      grid-column: 1/5;
+      grid-row: 2;
+      font-size: var(--step-1);
+   }
+}
+.job-title {
+   color: purple;
+   grid-row: 1;
+   grid-column: 1 / 7;
+   font-size: var(--step-7);
+   font-weight: 900;
+   z-index: 1;
+   margin-block-start: 1em;
+}
+
+.job-description {
+   grid-column: 1 / 5;
+   grid-row: 2;
+   align-self: start;
+   font-size: var(--step-1);
+}
+
+.my-photo {
+   grid-column: 5 / 9;
+   grid-row: 1 / 4;
+   justify-self: end;
+}
+
+.homepage-hero {
+   .content-container {
+      // display: grid;
+      // grid-template-columns: repeat(8, 1fr);
+      // grid-gap: var(--space-m-xl);
+      // align-items: center;
+   }
+}
